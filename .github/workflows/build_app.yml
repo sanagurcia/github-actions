@@ -10,13 +10,13 @@ on:
 
 jobs:
     build:
-        runs-on: self-hosted # run on github virtual machine
+        runs-on: self-hosted # run on own VPS (nano-debbie)
 
         steps:
             # running actions
             - uses: actions/checkout@v3 # checkout my repo onto runner
-            - uses: actions/setup-node@v3 # installs node 16, exposing commands 'node' & 'npm' in PATH
-              with:
-                  node-version: 16
+            # - uses: actions/setup-node@v3 # installs node 16, exposing commands 'node' & 'npm' in PATH
+            #   with:
+            #       node-version: 16
             # running shell scripts
             - run: npm install
