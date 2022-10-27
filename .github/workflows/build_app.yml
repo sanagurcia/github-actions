@@ -1,5 +1,11 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+# A simple continuous deployment workflow for a linode VPS running a barebones nodejs backend app.
+
+# Three steps:
+# 1) actions/checkout -> copy updated code onto VPS
+# 2) npm install  -> update dependencies
+# 3) pm2 restart -> restart the app
+
+# No build step currently needed. This simply updates the repository on the runner, updates any npm dependencies & restarts the app. 
 
 # Workflow (activated on event) has several jobs, and each job has several steps.
 name: Build node app
@@ -20,3 +26,4 @@ jobs:
             #       node-version: 16
             # running shell scripts
             - run: npm install
+            - run: pm2 restart  # uses pm2 npm module, which is running the node app, to restart app
