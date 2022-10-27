@@ -2,7 +2,7 @@
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
 # Workflow (activated on event) has several jobs, and each job has several steps.
-name: SADs Node.js CI 
+name: Build node project
 
 on:
   push:
