@@ -1,1 +1,1 @@
-A project to learn to use github actions.
+### A project for learning and testing CI/CD.

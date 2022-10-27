@@ -1,19 +1,10 @@
 {
-  "name": "github-actions",
-  "version": "1.0.0",
-  "description": "A project to learn to use github actions.",
+  "name": "mini-express",
+  "description": "A tiny express app for testing CI/CD.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run lint",
     "lint": "eslint ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sanagurcia/github-actions.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
   },

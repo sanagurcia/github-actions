@@ -4,7 +4,7 @@
         "eslint:recommended"
     ],
     "parserOptions": {
-        "ecmaVersion": "latest"
+        "ecmaVersion": "latest" // allows use of es2022
     },
     "env": {
         "node": true // allows use of "require" & "console"
